@@ -1,0 +1,88 @@
+<% content_for :head do %>
+	<%= stylesheet_link_tag "static_pages/home" %>
+	<link href='http://fonts.googleapis.com/css?family=Averia+Libre' rel='stylesheet' type='text/css'>
+	<%= javascript_include_tag "static_pages/home"%>
+<% end %>
+
+<div class="navbar">
+  <div class="navbar-inner">
+  	<a class="brand" href="">Junlan Liu</a>
+    <ul class="nav">
+      <li class="projects active"><a href="#projects">Projects</a></li>
+      <li class="prototypes"><a href="#prototypes">Prototypes</a></li>
+      <li class="about"><a href="#about">About</a></li>
+    </ul>
+  </div>
+</div>
+<div class="container-fluid">
+
+</div>
+<script type="text/template" id="ProjectsTemplate">
+	<div class="row">
+		<div class="span6">
+			<div class="project block">
+				<img class="thumbnail" src="assets/sentiment_460_300.jpg"/>
+				<div class="title">
+					<h3><a target="_blank" href="assets/sentiment.jpg">Sentiment Analyzer</a></h3>
+				</div>
+				<div class="description">
+					A Renren(a social network in China) app that uses machine learning methods to analyze a user's status in a year and generate an image that summarizes his/her sentiment during the year.
+				</div>
+				<div class="skills">
+					<span>SKILLS: </span><span class="tag">PHP</span>
+				</div>
+			</div>
+		</div>
+		<div class="span6">
+			<div class="project block">
+				<img class="thumbnail" src="assets/konspectus_460_300.png"/>
+				<div class="title">
+					<h3><a target="_blank" href="http://www.konspectus.com">Konspectus</a></h3>
+				</div>
+				<div class="description">
+					A web application that helps students write papers. It allow a student to outline his/her paper, store resources and references and automatically format the paper according to an academic standard such as MLA and APA.
+				</div>
+				<div class="skills">
+					<span>SKILLS: </span><span class="tag">ASP.NET</span><span class="tag">Silverlight</span><span class="tag">Object Oriented JavaScript</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script type="text/template" id="PrototypesTemplate">
+	<div class="row">
+		<div class="span6">
+			<div class="prototype block">
+				<img class="thumbnail" src="assets/konspectus_prototype_460_300.png"/>
+				<div class="title">
+					<h3><a target="_blank" href="http://invis.io/9Y41AKD2">Konspectus</a></h3>
+				</div>
+				<div class="description">
+					One of the prototypes I did for Konspectus. It was indented to show users the idea to collect early feedbacks and doesn't allow them to directly interact with it. Only I know where to click in order to get to the next page, you can try to navigate through it using "&lt;-" and "-&gt;" arrow.
+				</div>
+			</div>
+		</div>
+		<div class="span6">
+			<div class="prototype block">
+				<img class="thumbnail" src="assets/yanstein_prototype_460_300.png"/>
+				<div class="title">
+					<h3><%= link_to "Yanstein", {:controller => "static_pages", :action => "yanstein_prototype"}, :target => "_blank"%></h3>
+				</div>
+				<div class="description">
+					The project I am currently working on. This is an early prototype that shows a better interface for searching patents.
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script type="text/template" id="AboutTemplate">
+	<div class="portrait">
+		<img src="assets/me.jpg"/>
+		<div class="name">Junlan Liu</div>
+		<div class="email">junlan.liu@outlook.com</div>
+	</div>
+	</div>
+	<div class="about">
+		I am a software engineer who wants to make great products. My skills lies in two areas, one is information retrieval and analysis, which involves searching unstructured text, analyzing and visualizing it. The other is web application development. I've used various technologies like C++, Ruby on Rails, ASP.NET MVC, Silveright, HTML/CSS, Object Oriented JavaScript, JQuery, Backbone and so on. In my spare time, I like playing tennis, drawing and piano.
+	</div>
+</script>
