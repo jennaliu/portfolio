@@ -1,6 +1,6 @@
 Portfolio::Application.routes.draw do
   get "static_pages/home"
-  get "static_pages/yanstein_prototype"
+  # get "static_pages/yanstein_prototype"
 
   root :to => 'static_pages#home'
 
