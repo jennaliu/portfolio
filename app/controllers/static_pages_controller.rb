@@ -4,4 +4,7 @@ class StaticPagesController < ApplicationController
 
   def yanstein_prototype
   end
+
+  def editor
+  end
 end
